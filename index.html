@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feel Better Fahad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+      background: #fefae0;
+      color: #333;
+    }
+    h1 {
+      color: #d35400;
+    }
+    .emoji-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      font-size: 2rem;
+      margin: 30px auto;
+      max-width: 500px;
+    }
+    .emoji {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .emoji:hover {
+      transform: scale(1.3);
+    }
+    .output {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      background: #fff3cd;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      width: 80%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hope you feel better soon, Fahad! 🌟</h1>
+
+  <div class="emoji-container" id="emojiContainer"></div>
+
+  <div class="output" id="output">Click an emoji to see a funny fact!</div>
+
+  <script>
+    const data = [
+      {emoji: "🐸", fact: "Frogs can’t vomit. If they must, they throw up their whole stomach!"},
+      {emoji: "🦆", fact: "Ducks sometimes surf waves just for fun."},
+      {emoji: "🍌", fact: "Bananas are berries, but strawberries are not."},
+      {emoji: "🐢", fact: "Some turtles can breathe through their butts."},
+      {emoji: "🦉", fact: "Owls can’t move their eyes—only swivel their heads."},
+      {emoji: "🐑", fact: "Sheep can remember 50 faces for up to 2 years."},
+      {emoji: "🐶", fact: "Dogs’ noses are wet to absorb scent chemicals."},
+      {emoji: "🍕", fact: "In Japan, you can order pizza with mayo and squid."},
+      {emoji: "🐒", fact: "Monkeys can laugh when tickled."},
+      {emoji: "🦖", fact: "T-Rex’s arms were too short to clap."},
+      {emoji: "🐧", fact: "Penguins propose with pebbles to their mates."},
+      {emoji: "🦄", fact: "The national animal of Scotland is the unicorn."},
+      {emoji: "🥒", fact: "Cucumbers are 95% water but still crunchy."},
+      {emoji: "🐘", fact: "Elephants can 'hear' with their feet through vibrations."},
+      {emoji: "🐱", fact: "Cats can’t taste sweetness."},
+      {emoji: "🦀", fact: "Crabs communicate by waving their claws."},
+      {emoji: "🥕", fact: "Carrots were originally purple, not orange."},
+      {emoji: "🐼", fact: "Pandas fake being pregnant for extra bamboo treats."},
+      {emoji: "🦊", fact: "Foxes use the Earth’s magnetic field to hunt."},
+      {emoji: "🍄", fact: "There’s a mushroom in Oregon that covers 2,385 acres."},
+      {emoji: "🦒", fact: "Giraffes only sleep for about 30 minutes a day."},
+      {emoji: "🐨", fact: "Koalas’ fingerprints look almost human."},
+      {emoji: "🦔", fact: "Hedgehogs can have over 5,000 spines."},
+      {emoji: "🐍", fact: "Some snakes can ‘fly’ by gliding through the air."},
+      {emoji: "🍿", fact: "Popcorn is over 5,000 years old as a snack."},
+      {emoji: "🦩", fact: "Flamingos bend their legs at the ankle, not the knee."},
+      {emoji: "🐙", fact: "An octopus has three hearts and blue blood."},
+      {emoji: "🍉", fact: "Watermelons are 92% water."},
+      {emoji: "🦕", fact: "Some dinosaurs had feathers, not scales."},
+      {emoji: "🐝", fact: "Bees can recognize human faces."}
+    ];
+
+    const container = document.getElementById("emojiContainer");
+    const output = document.getElementById("output");
+
+    data.forEach((item) => {
+      const span = document.createElement("span");
+      span.textContent = item.emoji;
+      span.classList.add("emoji");
+      span.onclick = () => {
+        output.innerHTML = `<b>Funny fact:</b> ${item.fact}`;
+      };
+      container.appendChild(span);
+    });
+  </script>
+</body>
+</html>

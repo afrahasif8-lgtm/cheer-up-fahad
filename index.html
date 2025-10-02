@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feel Better Fahad!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feel Better Fahad</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #fffbea;
       text-align: center;
-      background-color: #fffaf0;
       padding: 20px;
+      color: #333;
     }
     h1 {
-      color: #ff6600;
+      color: #444;
     }
     .emoji-grid {
       display: flex;
@@ -20,80 +22,96 @@
       gap: 15px;
       margin: 20px 0;
     }
-    .emoji-btn {
+    .emoji-button {
       font-size: 2rem;
       cursor: pointer;
       border: none;
       background: none;
     }
-    .reason {
-      display: none;
-      margin: 10px 0;
-      font-size: 1.1rem;
-      color: #333;
+    .content-box {
+      margin: 25px auto;
+      padding: 20px;
+      max-width: 700px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     }
-    .games, .poems, .youtube {
-      margin-top: 30px;
-    }
-    a {
-      color: #0066cc;
+    .link-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 15px;
+      background-color: #fdd835;
+      border-radius: 8px;
       text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .link-button:hover {
+      background-color: #fbc02d;
     }
   </style>
 </head>
 <body>
 
-  <h1>Hope you feel better soon, Fahad! 🌟</h1>
+  <h1>🌼 Hope you feel better soon, Fahad! 🌼</h1>
 
-  <h2>Reasons Why I DO Love You</h2>
-  <div class="emoji-grid">
-    <button class="emoji-btn" onclick="showReason(0)">🌸</button>
-    <button class="emoji-btn" onclick="showReason(1)">🌻</button>
-    <button class="emoji-btn" onclick="showReason(2)">🌼</button>
-    <button class="emoji-btn" onclick="showReason(3)">🌹</button>
-    <button class="emoji-btn" onclick="showReason(4)">🌷</button>
-    <button class="emoji-btn" onclick="showReason(5)">💐</button>
-    <button class="emoji-btn" onclick="showReason(6)">🌺</button>
-    <button class="emoji-btn" onclick="showReason(7)">🥀</button>
-    <button class="emoji-btn" onclick="showReason(8)">🍀</button>
-    <button class="emoji-btn" onclick="showReason(9)">🌿</button>
+  <!-- Reasons Section -->
+  <div class="content-box">
+    <h2>💛 Reasons Why I DO Love You 💛</h2>
+    <div class="emoji-grid">
+      <button class="emoji-button" onclick="showReason(0)">🌸</button>
+      <button class="emoji-button" onclick="showReason(1)">🌼</button>
+      <button class="emoji-button" onclick="showReason(2)">🌹</button>
+      <button class="emoji-button" onclick="showReason(3)">🌻</button>
+      <button class="emoji-button" onclick="showReason(4)">🌷</button>
+      <button class="emoji-button" onclick="showReason(5)">💐</button>
+      <button class="emoji-button" onclick="showReason(6)">🍀</button>
+      <button class="emoji-button" onclick="showReason(7)">🌿</button>
+      <button class="emoji-button" onclick="showReason(8)">🍂</button>
+      <button class="emoji-button" onclick="showReason(9)">🌺</button>
+    </div>
+    <p id="reason-text" style="margin-top:15px; font-weight:bold;"></p>
   </div>
 
-  <div id="reasons">
-    <div class="reason">You’re the funniest guy in the world</div>
-    <div class="reason">You have the most hair I have ever seen on a man’s head (good for you!)</div>
-    <div class="reason">You are very forgiving and generous</div>
-    <div class="reason">You are patient and you give great advice</div>
-    <div class="reason">You can (more or less) predict the future</div>
-    <div class="reason">You are the only nice rich person I am friends with</div>
-    <div class="reason">You make ME want to be a nice rich person</div>
-    <div class="reason">You once came to my house at night to clear the air about something</div>
-    <div class="reason">You once got me Little Women and once 3 yellow flowers</div>
-    <div class="reason">You are the most fun to talk and listen to</div>
+  <!-- Games Section -->
+  <div class="content-box">
+    <h2>🎮 Games I Play to While Away Time 🎮</h2>
+    <a href="https://www.girlsgogames.com/game/penguin_diner_2" target="_blank" class="link-button">🐧 Penguin Diner 2</a>
+    <a href="https://www.y8.com/games/my_sweet_baby_2" target="_blank" class="link-button">👶 My Sweet Baby 2</a>
+    <a href="https://cutedressup.com/game/devilish-hairdresser" target="_blank" class="link-button">💇 Devilish Hairdresser</a>
   </div>
 
-  <div class="games">
-    <h2>Games I Play to While Away Time 🎮</h2>
-    <p><a href="https://www.girlsgogames.com/game/penguin_diner_2" target="_blank">Penguin Diner 2</a></p>
-    <p><a href="https://www.y8.com/games/my_sweet_baby_2" target="_blank">My Sweet Baby 2</a></p>
-    <p><a href="https://cutedressup.com/game/devilish-hairdresser" target="_blank">Devilish Hairdresser</a></p>
+  <!-- YouTube Section -->
+  <div class="content-box">
+    <h2>📺 YouTube 📺</h2>
+    <a href="https://www.youtube.com/watch?v=sB9eWtzTOq0" target="_blank" class="link-button">🤣 He’s funny like you</a>
   </div>
 
-  <div class="youtube">
-    <h2>YouTube 🎥</h2>
-    <p><a href="https://www.youtube.com/watch?v=sB9eWtzTOq0" target="_blank">He’s funny in the way that you are</a></p>
-  </div>
-
-  <div class="poems">
-    <h2>Poems 📜</h2>
-    <p><a href="https://www.poetryfoundation.org/poetrymagazine/browse?volume=10&issue=5&page=11" target="_blank">Afternoon on a Hill</a></p>
-    <p><a href="https://www.poetryfoundation.org/poetrymagazine/poems/44212/the-love-song-of-j-alfred-prufrock" target="_blank">The Love Song of J. Alfred Prufrock</a></p>
+  <!-- Poems Section -->
+  <div class="content-box">
+    <h2>📜 Poems 📜</h2>
+    <a href="https://www.poetryfoundation.org/poetrymagazine/browse?volume=10&issue=5&page=11" target="_blank" class="link-button">🌄 Afternoon on a Hill</a>
+    <a href="https://www.poetryfoundation.org/poetrymagazine/poems/44212/the-love-song-of-j-alfred-prufrock" target="_blank" class="link-button">🎭 The Love Song of J. Alfred Prufrock</a>
+    <a href="https://www.canva.com/design/DAG0iLZt4J0/wB-TUH4uJJZ4eQRXPxI58w/view?utm_content=DAG0iLZt4J0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48d077a589" target="_blank" class="link-button">🌟 Fahad Poem 1</a>
+    <a href="https://www.canva.com/design/DAG0rGz48eE/Kl-8KtE8G21IDZPQZRYkiQ/view?utm_content=DAG0rGz48eE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd57d470e30" target="_blank" class="link-button">🌟 Fahad Poem 2</a>
   </div>
 
   <script>
+    const reasons = [
+      "You’re the funniest guy in the world",
+      "You have the most hair I have ever seen on a man’s head (good for you!)",
+      "You are very forgiving and generous",
+      "You are patient and you give great advice",
+      "You can (more or less) predict the future",
+      "You are the only nice rich person I am friends with",
+      "You make ME want to be a nice rich person",
+      "You once came to my house at night to clear the air about something",
+      "You once got me Little Women and once 3 yellow flowers",
+      "You are the most fun to talk and listen to"
+    ];
+
     function showReason(index) {
-      const reasons = document.querySelectorAll('.reason');
-      reasons[index].style.display = reasons[index].style.display === 'block' ? 'none' : 'block';
+      document.getElementById("reason-text").innerText = reasons[index];
     }
   </script>
 
